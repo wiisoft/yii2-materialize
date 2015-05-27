@@ -1,0 +1,21 @@
+{
+    "name": "wiisoft/yii2-materialize",
+    "description": "Materialize CSS framework for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Zimovid",
+            "email": "webdev@webmaker.today"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "wii\\materialize\\": ""
+        }
+    }
+}
