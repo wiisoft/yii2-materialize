@@ -81,7 +81,7 @@ class Dropdown extends Widget
      */
     public function run()
     {
-        MaterializePluginAsset::register($this->getView());
+        MaterializeAsset::register($this->getView());
         $this->registerClientEvents();
         $this->getView()->registerJs("
 $('#{$this->id}-btn').dropdown({

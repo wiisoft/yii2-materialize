@@ -125,7 +125,7 @@ class Nav extends Widget
     {
         MaterializeAsset::register($this->getView());
         if ($this->buttonCollapse) {
-            MaterializePluginAsset::register($this->getView());
+            MaterializeAsset::register($this->getView());
             $this->getView()->registerJs('$("#' . $this->id . '-button-collapse").sideNav();');
         }
         return $this->renderItems();

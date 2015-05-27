@@ -107,6 +107,6 @@ class NavBar extends Widget
         if ($this->fixed) {
             echo Html::endTag('div');
         }
-        MaterializePluginAsset::register($this->getView());
+        MaterializeAsset::register($this->getView());
     }
 }

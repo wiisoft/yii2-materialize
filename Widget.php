@@ -54,7 +54,7 @@ class Widget extends \yii\base\Widget
     {
         $view = $this->getView();
 
-        MaterializePluginAsset::register($view);
+        MaterializeAsset::register($view);
 
         $id = $this->options['id'];
 
