@@ -1,5 +1,5 @@
 <?php
-namespace wii\materializee;
+namespace wii\materialize;
 
 use yii\web\AssetBundle;
 

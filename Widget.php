@@ -1,4 +1,4 @@
-<?php namespace wii\materializee;
+<?php namespace wii\materialize;
 
 use Yii;
 use yii\helpers\Json;
