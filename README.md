@@ -1,7 +1,8 @@
 Materialize for Yii2
 ====================
-Materialize CSS framework for Yii2
-This modified fork https://github.com/webmaxx/yii2-materialize
+Materialize [CSS framework](http://materializecss.com/) for Yii2.
+
+This modified fork https://github.com/webmaxx/yii2-materialize.
 
 Installation
 ------------
@@ -49,7 +50,7 @@ NavBar::end();
 
 ```
 
-Navbar  Widget with dropdown elemets
+Navbar Widget with dropdown elemets
 ------------------------------------
 ```php
 echo Nav::widget([
