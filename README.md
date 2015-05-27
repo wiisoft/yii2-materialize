@@ -26,8 +26,7 @@ to the require section of your `composer.json` file.
 
 Usage
 -----
-
-<<<<<<< HEAD
+ 
 Navbar Widget
 -------------
 NavBar renders a navbar HTML component.
@@ -75,5 +74,22 @@ echo Nav::widget([
 ]);
 ```
 
-
-
+Badge renders a materialize button.       
+------------------------------------                                          
+                               
+                                          
+```php                                    
+echo Badge::widget([                      
+    'label' => 'Action',                  
+    'options' => ['class' => 'new'],      
+]);                                       
+```      
+                                 
+Button renders a materialize button.                                
+------------------------------------                                            
+```php                                     
+echo Button::widget([                      
+    'label' => 'Action',                   
+    'options' => ['class' => 'btn-large'], 
+]);                                        
+``` 
