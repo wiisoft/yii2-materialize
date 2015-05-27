@@ -1,4 +1,5 @@
-<?php namespace wii\materializee;
+<?php
+namespace wii\materializee;
 
 use yii\web\AssetBundle;
 
@@ -15,3 +16,6 @@ class MaterializeAsset extends AssetBundle
         'css/materialize.css',
     ];
 }
+
+
+

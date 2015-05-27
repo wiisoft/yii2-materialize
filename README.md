@@ -27,6 +27,7 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
+<<<<<<< HEAD
 Navbar Widget
 -------------
 NavBar renders a navbar HTML component.
