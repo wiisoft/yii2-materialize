@@ -16,7 +16,7 @@ use yii\helpers\Html;
  * ```
  * @see http://materializecss.com/icons.html
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.0
+ * @since 1.1
  */
 class Icon extends Widget
 {
@@ -37,7 +37,7 @@ class Icon extends Widget
     {
         parent::init();
         $this->clientOptions = false;
-        Html::addCssClass($this->options, 'mdi-' . $this->name);
+        Html::addCssClass($this->options, 'fa ' . $this->name);
     }
 
     /**

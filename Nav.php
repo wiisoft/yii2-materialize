@@ -34,7 +34,7 @@ use yii\helpers\Html;
  * ```
  * @see http://materializecss.com/navbar.html
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.0
+ * @since 1.1
  */
 class Nav extends Widget
 {
@@ -180,7 +180,7 @@ class Nav extends Widget
             Html::addCssClass($linkOptions, 'dropdown-button');
             $linkOptions['id'] = $dropdownId . '-btn';
             $linkOptions['data-activates'] = $dropdownId;
-            $label .= ' ' . Icon::widget(['name' => 'navigation-arrow-drop-down right']);
+            $label .= ' ' . Icon::widget(['name' => 'fa-caret-down right']);
             if (is_array($items)) {
                 if ($this->activateItems) {
                     $items = $this->isChildActive($items, $active);

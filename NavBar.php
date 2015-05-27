@@ -27,7 +27,7 @@ use yii\helpers\Html;
  * ```
  * @see http://materializecss.com/navbar.html
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.0
+ * @since 1.1
  */
 class NavBar extends Widget
 {
@@ -101,7 +101,6 @@ class NavBar extends Widget
      */
     public function run()
     {
-        //echo Html::endTag('div');
         $tag = ArrayHelper::remove($this->options, 'tag', 'nav');
         echo Html::endTag($tag, $this->options);
         if ($this->fixed) {
