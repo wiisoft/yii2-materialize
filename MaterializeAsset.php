@@ -11,9 +11,9 @@ use yii\web\AssetBundle;
  */
 class MaterializeAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/materialize/dist';
+    public $sourcePath = '@bower/maza';
     public $css = [
-        'css/materialize.css',
+        'css/materialize-fix-min.css',
     ];
 }
 

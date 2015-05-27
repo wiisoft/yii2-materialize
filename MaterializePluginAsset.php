@@ -1,4 +1,5 @@
-<?php namespace wii\materialize;
+<?php
+namespace wii\materialize;
 
 use yii\web\AssetBundle;
 
@@ -10,7 +11,7 @@ use yii\web\AssetBundle;
  */
 class MaterializePluginAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/materialize/dist';
+    public $sourcePath = '@bower/maza';
     public $js = [
         'js/materialize.js',
     ];

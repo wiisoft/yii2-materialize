@@ -1,4 +1,5 @@
-<?php namespace wii\materialize;
+<?php
+namespace wii\materialize;
 
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
