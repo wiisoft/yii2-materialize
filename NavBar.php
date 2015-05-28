@@ -68,6 +68,15 @@ class NavBar extends Widget
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
     public $wraperContainerOptions = [];
+    /**
+     * @var string|boolean the text for mobile devices of the brand of false if it's not used. Note that this is not HTML-encoded.
+     */
+    public $brandMobileLabel = false;
+    /**
+     * @var array the HTML attributes of the brand mobile link.
+     * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
+     */
+    public $brandMobileOptions = [];
 
     /**
      * Initializes the widget.
@@ -93,6 +102,10 @@ class NavBar extends Widget
         if ($this->brandLabel !== false) {
             Html::addCssClass($this->brandOptions, 'brand-logo');
             echo Html::a($this->brandLabel, $this->brandUrl === false ? Yii::$app->homeUrl : $this->brandUrl, $this->brandOptions);
+        }
+        if ($this->brandMobileLabel !== false) {
+            Html::addCssClass($this->brandMobileOptions, 'brand-logo');
+            echo Html::a($this->brandMobileLabel, $this->brandUrl === false ? Yii::$app->homeUrl : $this->brandUrl, $this->brandMobileOptions);
         }
     }
 
