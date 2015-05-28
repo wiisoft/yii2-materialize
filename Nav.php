@@ -34,7 +34,7 @@ use yii\helpers\Html;
  * ```
  * @see http://materializecss.com/navbar.html
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.1
+ * @since 1.2
  */
 class Nav extends Widget
 {
@@ -98,6 +98,24 @@ class Nav extends Widget
 
     /**
      * @var array list of items for Mobile menu.
+     * Using:
+     *
+     *  'mobileItems'=>[
+     *      [
+     *          'label' => 'Home',
+     *          'url' => ['site/index'],
+     *          'linkOptions' => [],
+     *      ],
+     *      [
+     *          'label' => 'Articles',
+     *          'url' => ['service/articles']
+     *      ],
+     *      [
+     *          'label' => 'Contacts',
+     *          'url' => ['service/contacts']
+     *      ]
+     *   ]
+     *
      *
      * - label: string, required, the nav item label.
      * - url: optional, the item's URL. Defaults to "#".
@@ -110,6 +128,7 @@ class Nav extends Widget
      *
      * If a menu item is a string, it will be rendered directly without HTML encoding.
      */
+
     public $mobileItems =[];
 
     /**
