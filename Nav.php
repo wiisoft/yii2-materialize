@@ -89,12 +89,28 @@ class Nav extends Widget
     /**
      * @var string the text of the button collapse. Note that this is not HTML-encoded.
      */
-    public $buttonCollapseLabel = '<i class="mdi-navigation-menu"></i>';
+    public $buttonCollapseLabel = '<i class="fa fa-bars"></i>';
     /**
      * @var array the HTML attributes of the button collapse.
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
     public $buttonCollapseOptions = [];
+
+    /**
+     * @var array list of items for Mobile menu.
+     *
+     * - label: string, required, the nav item label.
+     * - url: optional, the item's URL. Defaults to "#".
+     * - visible: boolean, optional, whether this menu item is visible. Defaults to true.
+     * - linkOptions: array, optional, the HTML attributes of the item's link.
+     * - options: array, optional, the HTML attributes of the item container (LI).
+     * - active: boolean, optional, whether the item should be on active state or not.
+     * - items: array|string, optional, the configuration array for creating a [[Dropdown]] widget,
+     *   or a string representing the dropdown menu. Note that Bootstrap does not support sub-dropdown menus.
+     *
+     * If a menu item is a string, it will be rendered directly without HTML encoding.
+     */
+    public $mobileItems =[];
 
     /**
      * Initializes the widget.
@@ -106,7 +122,7 @@ class Nav extends Widget
         if ($this->buttonCollapse) {
             Html::addCssClass($this->buttonCollapseOptions, 'button-collapse');
             $this->buttonCollapseOptions['id'] = $this->id . '-button-collapse';
-            $this->buttonCollapseOptions['data-activates'] = $this->id;
+            $this->buttonCollapseOptions['data-activates'] = $this->id . '-mobile';
             echo Html::a($this->buttonCollapseLabel, '#', $this->buttonCollapseOptions);
         }
         if ($this->route === null && Yii::$app->controller !== null) {
@@ -128,23 +144,39 @@ class Nav extends Widget
             MaterializeAsset::register($this->getView());
             $this->getView()->registerJs('$("#' . $this->id . '-button-collapse").sideNav();');
         }
-        return $this->renderItems();
+        return $this->renderItems(). $this->renderMobileMenuItems();
     }
 
     /**
      * Renders widget items.
      */
-    public function renderItems()
+    public function renderItems($items=null)
     {
+
+        $menuItems = (!empty($items))?$items:$this->items;
         $items = [];
-        foreach ($this->items as $i => $item) {
+        foreach ($menuItems as $i => $item) {
             if (isset($item['visible']) && !$item['visible']) {
                 continue;
             }
             $items[] = $this->renderItem($item);
         }
-
         return Html::tag('ul', implode("\n", $items), $this->options);
+    }
+
+    /**
+     * Render mobile menu items
+     * @return string
+     */
+    public function  renderMobileMenuItems(){
+        $this->options['class']='side-nav';
+        $this->options['id']=$this->buttonCollapseOptions['data-activates'];
+        if(!empty($this->mobileItems)){
+            $mobileItems = $this->mobileItems;
+            return $this->renderItems($mobileItems);
+        }else{
+            return $this->renderItems();
+        }
     }
 
     /**
@@ -192,7 +224,6 @@ class Nav extends Widget
         if ($this->activateItems && $active) {
             Html::addCssClass($options, 'active');
         }
-
         return Html::tag('li', Html::a($label, $url, $linkOptions) . $items, $options);
     }
 

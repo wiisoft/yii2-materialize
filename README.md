@@ -73,7 +73,46 @@ echo Nav::widget([
     'options' => ['class' =>'nav-pills'], // set this to nav-tab to get tab-styled navigation
 ]);
 ```
+You can follow any responses to customize the display mobile menu with the parameter $mobileItems using
+the same parameters as for $items.
+If this parameter is $ mobileytems not specified, the menu specified in the $ items.
 
+```php
+echo Nav::widget([
+    'items' => [
+        [
+            'label' => 'Home',
+            'url' => ['site/index'],
+            'linkOptions' => [...],
+        ],
+        [
+            'label' => 'Dropdown',
+            'items' => [
+                 ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
+                 '<li class="divider"></li>',
+                 '<li class="dropdown-header">Dropdown Header</li>',
+                 ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
+            ],
+        ],
+    ],
+    'mobileItems'=>[
+        [
+            'label' => 'Home',
+            'url' => ['site/index'],
+            'linkOptions' => [],
+        ],
+        [
+            'label' => 'Articles',
+            'url' => ['service/articles']
+        ],
+        [
+            'label' => 'Contacts',
+            'url' => ['service/contacts']
+        ]
+     ],
+    'options' => ['class' =>'nav-pills'], // set this to nav-tab to get tab-styled navigation
+]);
+```
 Badge renders a materialize button.       
 ------------------------------------                                          
                                
