@@ -1,7 +1,8 @@
 Materialize for Yii2
 ====================
 
-This is a set of widgets based on an improved version of MAZA [CSS framework](https://github.com/wiisoft/maza) - [CSS framework](http://materializecss.com/) for Yii2.
+This is a set of widgets based on an improved version of MAZA [CSS framework](https://github.com/wiisoft/maza) - 
+Materialize[CSS framework](http://materializecss.com/) for Yii2.
 
 This modified fork https://github.com/webmaxx/yii2-materialize.
 
