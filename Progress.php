@@ -24,7 +24,7 @@ use yii\helpers\Html;
  * ```
  * @see http://materializecss.com/preloader.html
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.0
+ * @since 1.2
  */
 class Progress extends Widget
 {

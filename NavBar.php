@@ -27,7 +27,7 @@ use yii\helpers\Html;
  * ```
  * @see http://materializecss.com/navbar.html
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.1
+ * @since 1.2
  */
 class NavBar extends Widget
 {

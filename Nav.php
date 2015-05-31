@@ -252,7 +252,7 @@ class Nav extends Widget
      * @param array $items the given items. Please refer to [[Dropdown::items]] for the array structure.
      * @param array $parentItem the parent item information. Please refer to [[items]] for the structure of this array.
      * @return string the rendering result.
-     * @since 1.0.1
+     * @since 1.2.1
      */
     protected function renderDropdown($items, $parentItem, $dropdownId)
     {

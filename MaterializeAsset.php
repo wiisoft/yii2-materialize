@@ -7,7 +7,7 @@ use yii\web\AssetBundle;
  * Asset bundle for the Materialize css files.
  *
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.0
+ * @since 1.2
  */
 class MaterializeAsset extends AssetBundle
 {

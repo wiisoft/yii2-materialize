@@ -8,7 +8,7 @@ use yii\helpers\Json;
  * \wii\materializee\Widget is the base class for all materialize widgets.
  *
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.0
+ * @since 1.2
  */
 class Widget extends \yii\base\Widget
 {
@@ -69,7 +69,7 @@ class Widget extends \yii\base\Widget
 
     /**
      * Registers JS event handlers that are listed in [[clientEvents]].
-     * @since 1.0.2
+     * @since 1.2.2
      */
     protected function registerClientEvents()
     {

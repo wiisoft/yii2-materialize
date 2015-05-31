@@ -16,7 +16,7 @@ use yii\helpers\Html;
  * ```
  * @see http://materializecss.com/buttons.html
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.0
+ * @since 1.2
  */
 class Button extends Widget
 {

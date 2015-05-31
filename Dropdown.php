@@ -21,7 +21,7 @@ use yii\helpers\Url;
  * ```
  * @see http://materializecss.com/dropdown.html
  * @author wiisoft <webdev@webmaker.today>
- * @since 1.0
+ * @since 1.2
  */
 class Dropdown extends Widget
 {
