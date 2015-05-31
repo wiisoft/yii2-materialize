@@ -1,34 +1,36 @@
 {
-    "name": "wiisoft/yii2-materialize",
-    "description": "This is a set of widgets based on an improved version of MAZA CSS framework - MaterializeCSS framework for Yii2",
-    "type": "yii2-extension",
-    "keywords": ["yii2","extension"],
-    "license": "BSD-3-Clause",
-    "support": {
-      "issues": "https://github.com/webmaxx/yii2-materialize/issues",
-      "source": "https://github.com/webmaxx/yii2-materialize"
-    },
-    "authors": [
-        {
-            "name": "Zimovid",
-            "email": "webdev@webmaker.today"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "yiisoft/yii2": "*",
-        "bower-asset/maza": "@stable"
-    },
-    "autoload": {
-        "psr-4": {
-            "wii\\materialize\\": ""
-        }
-    },
-    "extra": {
-      "asset-installer-paths": {
-        "npm-asset-library": "vendor/npm",
-        "bower-asset-library": "vendor/bower"
-      }
+  "name": "wiisoft/yii2-materialize",
+  "description": "This is a set of widgets based on an improved version of MAZA CSS framework - MaterializeCSS framework for Yii2",
+  "keywords": [
+    "yii2",
+    "materialize"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/wiisoft/yii2-materialize/issues",
+    "source": "https://github.com/wiisoft/yii2-materialize"
+  },
+  "authors": [
+    {
+      "name": "wiisoft",
+      "email": "webdev@webmmaker.today"
     }
-
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "yiisoft/yii2": "*",
+    "bower-asset/materialize": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "webmaxx\\materialize\\": ""
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
 }
