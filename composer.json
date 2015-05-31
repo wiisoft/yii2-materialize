@@ -20,7 +20,7 @@
   "minimum-stability": "dev",
   "require": {
     "yiisoft/yii2": "*",
-    "bower-asset/maza": "@stable"
+    "bower-asset/maza": "*"
   },
   "autoload": {
     "psr-4": {
