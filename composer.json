@@ -20,11 +20,11 @@
   "minimum-stability": "dev",
   "require": {
     "yiisoft/yii2": "*",
-    "bower-asset/materialize": "@stable"
+    "bower-asset/maza": "@stable"
   },
   "autoload": {
     "psr-4": {
-      "webmaxx\\materialize\\": ""
+      "wii\\materialize\\": ""
     }
   },
   "extra": {
