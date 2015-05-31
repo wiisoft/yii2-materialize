@@ -14,7 +14,7 @@
             "email": "webdev@webmaker.today"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "*",
         "bower-asset/maza": "@stable"
