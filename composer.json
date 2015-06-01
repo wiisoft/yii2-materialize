@@ -1,11 +1,17 @@
 {
-  "name": "wiisoft/materialize",
-  "description": "This is a set of widgets based on an improved version of MAZA CSS framework - MaterializeCSS framework for Yii2",
+  "name": "webmaxx/yii2-materialize",
+  "description": "The Materialize extension for the Yii framework",
+  "keywords": ["yii2", "materialize"],
+  "type": "yii2-extension",
   "license": "MIT",
+  "support": {
+    "issues": "https://github.com/webmaxx/yii2-materialize/issues",
+    "source": "https://github.com/webmaxx/yii2-materialize"
+  },
   "authors": [
     {
-      "name": "wiisoft",
-      "email": "webdev@webmaker.today"
+      "name": "webmaxx",
+      "email": "webmaxx@webmaxx.name"
     }
   ],
   "minimum-stability": "dev",
@@ -15,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "wii\\materialize\\": ""
+      "webmaxx\\materialize\\": ""
     }
   },
   "extra": {
