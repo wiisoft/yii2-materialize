@@ -2,7 +2,7 @@
   "name": "wiisoft/materialize",
   "description": "This is a set of widgets based on an improved version of MAZA CSS framework - MaterializeCSS framework for Yii2",
   "require": {
-    "bower-asset/maza": "@dev-master",
+    "bower-github/maza": "*",
     "yiisoft/yii2": "^2.0@dev"
   },
   "autoload": {
