@@ -1,8 +1,16 @@
 {
   "name": "wiisoft/materialize",
   "description": "This is a set of widgets based on an improved version of MAZA CSS framework - MaterializeCSS framework for Yii2",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "wiisoft",
+      "email": "webdev@webmaker.today"
+    }
+  ],
+  "minimum-stability": "dev",
   "require": {
-    "bower-asset/maza": "@dev",
+    "bower-asset/maza": "@dev-master",
     "yiisoft/yii2": "^2.0@dev"
   },
   "autoload": {
@@ -16,12 +24,4 @@
       "bower-asset-library": "vendor/bower"
     }
   },
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "wiisoft",
-      "email": "webdev@webmaker.today"
-    }
-  ],
-  "minimum-stability": "dev"
 }
