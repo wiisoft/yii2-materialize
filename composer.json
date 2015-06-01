@@ -10,8 +10,8 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "bower-asset/materialize": "@stable",
-    "yiisoft/yii2": "*"
+    "yiisoft/yii2": "*",
+    "bower-asset/materialize": "@stable"
   },
   "autoload": {
     "psr-4": {
