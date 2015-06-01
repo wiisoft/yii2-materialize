@@ -10,9 +10,8 @@
   ],
   "minimum-stability": "dev",
   "require": {
-//    "bower-asset/maza": "*",
     "bower-asset/materialize": "@stable",
-    "yiisoft/yii2": "^2.0@dev"
+    "yiisoft/yii2": "*"
   },
   "autoload": {
     "psr-4": {
