@@ -10,7 +10,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "bower-asset/maza": "dev-master",
+    "bower-asset/maza": "dev",
     "yiisoft/yii2": "^2.0@dev"
   },
   "autoload": {
