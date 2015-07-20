@@ -1,7 +1,7 @@
 {
   "name": "wiisoft/yii2-materialize",
-  "description": "The Materialize extension for the Yii framework",
-  "keywords": ["yii2", "materialize"],
+  "description": "This is a set of widgets based on an improved version of MAZA CSS framework - MaterializeCSS framework for Yii2",
+  "keywords": ["yii2", "materialize","materialedesign","yii2-extensions","yii2-design"],
   "type": "yii2-extension",
   "license": "MIT",
   "support": {
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "wiisoft\\materialize\\": ""
+      "wii\\materialize\\": ""
     }
   },
   "extra": {
