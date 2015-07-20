@@ -5,13 +5,13 @@
   "type": "yii2-extension",
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/webmaxx/yii2-materialize/issues",
-    "source": "https://github.com/webmaxx/yii2-materialize"
+    "issues": "https://github.com/wiisoft/yii2-materialize/issues",
+    "source": "https://github.com/wiisoft/yii2-materialize"
   },
   "authors": [
     {
-      "name": "webmaxx",
-      "email": "webmaxx@webmaxx.name"
+      "name": "wiisoft",
+      "email": "webdev@webmaker.today"
     }
   ],
   "minimum-stability": "dev",
