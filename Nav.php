@@ -189,7 +189,7 @@ class Nav extends Widget
      */
     public function  renderMobileMenuItems(){
         $this->options['class']='side-nav';
-        $this->options['id']=$this->buttonCollapseOptions['data-activates'];
+        $this->options['id']=$this->options['id'].'-mobile';
         if(!empty($this->mobileItems)){
             $mobileItems = $this->mobileItems;
             return $this->renderItems($mobileItems);
