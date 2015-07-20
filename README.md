@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist wii/yii2-materialize "*"
+php composer.phar require --prefer-dist wiisoft/yii2-materialize "*"
 ```
 
 or add
 
 ```
-"wii/yii2-materialize": "*"
+"wiisoft/yii2-materialize": "*"
 ```
 
 to the require section of your `composer.json` file.
