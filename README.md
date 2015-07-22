@@ -167,4 +167,51 @@ echo Slider::widget([
         ],
         'options'=>['id'=>'options'],
         'slidesOptions'=>['class'=>'slidesOptions'],                                                                  
+```                                                        
+
+Card renders a card HTML component.                                
+------------------------------------                                            
+```php                                                                                  
+echo Card::widget([                                                                                       
+  'item' => [                                                                                             
+             'img' => '/tmp/3.jpg',                                                                       
+             'imgOptions' => ['class' => 'imgOptions', 'id' => 'imgOptions'],                             
+             'cardImgOptions' => ['class' => 'cardImgOptions', 'id' => 'cardImgOptions'],                 
+             'cardContentOptions' => ['class' => 'cardContentOptions', 'id' => 'cardContentOptions'],     
+             'cardTitle'=>'Card Title',                                                                   
+             'cardTitleOptions'=>['class'=>'cardTitleOptions','id'=>'cardTitleOptions'],                  
+             'cardContent' => [                                                                           
+                  [                                                                                       
+                  'tag' => 'p',                                                                           
+                  'body' => 'I am a very simple card. I am good at containing small bits of information.  
+                  I am convenient because I require little markup to use effectively.'                    
+                  ]                                                                                       
+                                                                                                          
+             ],                                                                                           
+             'cardReveal' => [                                                                            
+                 [                                                                                        
+                     'tag' => 'span',                                                                     
+                     'activator' => 'true',                                                               
+                     'options' => [],                                                                     
+                     'body' => ' Card Title <i class="fa fa-times right"></i>'                            
+                 ],                                                                                       
+                 [                                                                                        
+                     'tag' => 'p',                                                                        
+                     'options' => [],                                                                     
+                     'body' => '<a href="#">This is a link</a>'                                           
+                 ],                                                                                       
+             ],                                                                                           
+             'cardAction' => [                                                                            
+                  [                                                                                       
+                  'tag' => 'span',                                                                        
+                  'body' => '<a href="#">This is a link</a>'                                              
+                  ],                                                                                      
+                 [                                                                                        
+                 'tag' => 'span',                                                                         
+                 'body' => '<a href="#">This is a link</a>'                                               
+                 ],                                                                                       
+             ],                                                                                           
+         ],                                                                                               
+     'options' => ['class' => 'wow bounceIn']                                                             
+ ]);                                                                                                                                                                        
 ```                                                                                  
