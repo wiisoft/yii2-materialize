@@ -74,7 +74,7 @@ class Slider extends Widget
     public function init()
     {
         parent::init();
-
+        $this->clientOptions = false;
     }
 
     public function run()
