@@ -9,9 +9,9 @@
  *  'items' =>[
  *          [
  *              'img' => "/tmp/1b.jpg",
- *              'imgOptions' => ['alt' => 'Test', 'title' => 'Title', 'class' => 'myclass'],
+ *              'imgOptions' => ['alt' => 'Test', 'title' => 'Title', 'class' => 'myClass'],
  *              'title' => "Left Aligned Caption",
- *              'titleOptions' => ['id' => 'id', 'class' => 'titleclass'],
+ *              'titleOptions' => ['id' => 'id', 'class' => 'titleClass'],
  *              'smallTitle' => "Here's our small slogan.",
  *              'smallTitleOptions' => ['class' => 'light grey-text text-lighten-3'],
  *              'itemOptions' => ['class' => 'center-align'],
@@ -37,7 +37,7 @@
  *
  *  ]);
  * ```
- * @see http://materializecss.com/slider.html
+ * @see http://materializecss.com/media.html
  * @author wiisoft <webdev@webmaker.today>
  * @since 1.3
  */

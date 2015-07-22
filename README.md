@@ -134,3 +134,37 @@ echo Button::widget([
     'options' => ['class' => 'btn-large'], 
 ]);                                        
 ``` 
+
+Slider renders a slides HTML component.                                
+------------------------------------                                            
+```php                                                                                  
+echo Slider::widget([                                                                    
+        'items' =>[
+            [
+                'img' => "/tmp/1b.jpg",
+                'imgOptions' => ['alt' => 'Test', 'Title' => 'Title', 'class' => 'myClass'],
+                'title' => "Left Aligned Caption",
+                'titleOptions' =>['id' => 'id', 'class' => 'titleClass'],
+                'smallTitle' => "Here's our small slogan.",
+                'smallTitleOptions' => ['class' => 'light grey-text text-lighten-3'],
+                'itemOptions' => ['class' => 'center-align'],
+
+            ],
+            [
+                'img' => "/tmp/2b.jpg",
+                'title' => "Left Aligned Caption",
+                'smallTitle' => "Here's our small slogan.",
+                'smallTitleOptions' => ['class' => 'light grey-text text-lighten-3'],
+                'itemOptions' => ['class' => 'left-align']
+            ],
+            [
+                'img' => "/tmp/3b.jpg",
+                'title' => "Left Aligned Caption",
+                'smallTitle' => "Here's our small slogan.",
+                'smallTitleOptions' => ['class' => 'light grey-text text-lighten-3'],
+                'itemOptions' => ['class' => 'right-align']
+            ],
+        ],
+        'options'=>['id'=>'options'],
+        'slidesOptions'=>['class'=>'slidesOptions'],                                                                  
+```                                                                                  
