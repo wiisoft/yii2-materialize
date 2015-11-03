@@ -38,8 +38,8 @@ is treated as the content of the navbar. You may use widgets such as [[Nav]]
 or [[\yii\widgets\Menu]] to build up such content. For example,
 
 ```php
-use wii\materializee\Nav;
-use wii\materializee\NavBar;
+use wii\materialize\Nav;
+use wii\materialize\NavBar;
 
 NavBar::begin(['brandLabel' => 'NavBar Test']);
 echo Nav::widget([
