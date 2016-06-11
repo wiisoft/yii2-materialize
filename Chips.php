@@ -13,8 +13,8 @@ use yii\helpers\Html;
  * echo Chips::widget([
  *     'label' => 'Chip',
  *     'options' => ['class' => 'new'],
- 	   'img' => 'url',
- 	   'imgOptions' => ['alt' => 'url'],
+       'img' => 'url',
+       'imgOptions' => ['alt' => 'url'],
        'closeIcon' => 'close']
  * ]);
  * ```
