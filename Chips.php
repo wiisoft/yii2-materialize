@@ -26,38 +26,45 @@ use yii\helpers\Html;
 class Chips extends Widget
 {
 	
-	/**
+    /**
      * @var string the tag to use to render the chip
      */
     public $tagName = 'div';
+    
     /**
      * @var string the chip label
      */
     public $label = '';
+    
     /**
      * @var boolean whether the label should be HTML-encoded.
      */
     public $encodeLabel = true;
+    
     /**
      * @var string default css class for chip
      */
     public $defaultClass = 'chip';
-    /**
+    
+   /**
     * @var array the HTML attributes of the chip.
-     */
-   	public $options = [];
-   	/**
-     * @var string the image for chip.
-     */
-   	public $img ='';
-   	/**
+    */
+   public $options = [];
+   	
+   /**
+    * @var string the image for chip.
+    */
+   public $img ='';
+   
+   /**
     * @var array the HTML attributes of the image.
-     */
-   	public $imgOptions = [];
-   	/**
-     * @var string close icon for the chip.
-     */
-   	public $closeIcon = '';
+    */
+   public $imgOptions = [];
+   
+   /**
+    * @var string close icon for the chip.
+    */
+   public $closeIcon = '';
    
 
     /**
