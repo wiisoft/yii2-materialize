@@ -18,47 +18,53 @@ use yii\helpers\Html;
  * ]);
  * ```
  * @see http://materializecss.com/chips.html
- * @author InsaneSkull
+ * @author InsaneSkull <padiaankit@gmail.com>
  
  */
  
 class Chips extends Widget
 {
 	
-	/**
-     * @var string the tag to use to render the chip
-     */
+   /**
+    * @var string the tag to use to render the chip
+    */
     public $tagName = 'div';
+	
     /**
      * @var string the chip label
-     */
+    */
     public $label = '';
+	
     /**
      * @var boolean whether the label should be HTML-encoded.
      */
     public $encodeLabel = true;
+	
     /**
      * @var string default css class for chip
      */
     public $defaultClass = 'chip';
+	
     /**
-    * @var array the HTML attributes of the chip.
+     * @var array the HTML attributes of the chip.
      */
-   	public $options = [];
-   	/**
+    public $options = [];
+	
+    /**
      * @var string the image for chip.
      */
-   	public $img ='';
-   	/**
-    * @var array the HTML attributes of the image.
+    public $img ='';
+	
+    /**
+     * @var array the HTML attributes of the image.
      */
-   	public $imgOptions = [];
-   	/**
+    public $imgOptions = [];
+	
+    /**
      * @var string close icon for the chip.
      */
-   	public $closeIcon = '';
+    public $closeIcon = '';
    
-
     /**
      * Initializes the widget.
      * If you override this method, make sure you call the parent implementation first.
@@ -86,8 +92,7 @@ class Chips extends Widget
      */
     private function renderImage($image)
     {
-    	if(!empty($image))
-    	{
+    	if(!empty($image)) {
     		echo Html::img($image, $this->imgOptions);
     	}
     }
@@ -97,8 +102,7 @@ class Chips extends Widget
      */
     private function renderCloseIcon($icon)
     {
-    	if($icon)
-    	{
+    	if($icon) {
     		echo Html::tag('i', $icon,['class' => 'material-icons']);
     	}
     
