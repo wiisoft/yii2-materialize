@@ -88,7 +88,7 @@ class Chips extends Widget
     }
     
     /**
-     * Renders the Image.
+     * Renders the Image..
      */
     private function renderImage($image)
     {
