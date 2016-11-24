@@ -105,7 +105,7 @@ class Chips extends Widget
     {
     	if($icon)
     	{
-    		echo Html::tag('i', $icon,['class' => 'material-icons']);
+    	    echo Html::tag('i', $icon,['class' => 'material-icons']);
     	}
     
     }
