@@ -16,7 +16,7 @@ use yii\helpers\Html;
  *     'img' => 'url',
  *     'imgOptions' => ['alt' => 'url'],
  *     'closeIcon' => 'close'
- *  ]);
+ * ]);
  * ```
  * @see http://materializecss.com/chips.html
  * @author InsaneSkull
