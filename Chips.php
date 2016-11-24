@@ -45,27 +45,26 @@ class Chips extends Widget
      */
     public $defaultClass = 'chip';
     
-   /**
-    * @var array the HTML attributes of the chip.
-    */
-   public $options = [];
+    /**
+     * @var array the HTML attributes of the chip.
+     */
+    public $options = [];
    	
-   /**
-    * @var string the image for chip.
-    */
-   public $img ='';
+    /**
+     * @var string the image for chip.
+     */
+    public $img ='';
    
-   /**
-    * @var array the HTML attributes of the image.
-    */
-   public $imgOptions = [];
+    /**
+     * @var array the HTML attributes of the image.
+     */
+    public $imgOptions = [];
    
-   /**
-    * @var string close icon for the chip.
-    */
-   public $closeIcon = '';
+    /**
+     * @var string close icon for the chip.
+     */
+    public $closeIcon = '';
    
-
     /**
      * Initializes the widget.
      * If you override this method, make sure you call the parent implementation first.
@@ -95,7 +94,7 @@ class Chips extends Widget
     {
     	if(!empty($image))
     	{
-    		echo Html::img($image, $this->imgOptions);
+			echo Html::img($image, $this->imgOptions);
     	}
     }
     
