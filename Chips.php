@@ -20,7 +20,6 @@ use yii\helpers\Html;
  * ```
  * @see http://materializecss.com/chips.html
  * @author InsaneSkull
- 
  */
  
 class Chips extends Widget
